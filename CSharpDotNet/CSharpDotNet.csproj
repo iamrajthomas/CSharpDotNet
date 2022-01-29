@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpDotNet.AbstractTopic.Class1</StartupObject>
+    <StartupObject>CSharpDotNet.ExtensionMethodTopic.TestExtension</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,7 +50,15 @@
     <Compile Include="AbstractTopic\TestAbsClass1.cs" />
     <Compile Include="AbstractTopic\TestAbsClass2.cs" />
     <Compile Include="AnonymousType\TestAnonymousType.cs" />
+    <Compile Include="DelegateTopic\GenericDelegates.cs" />
+    <Compile Include="DelegateTopic\TestAnonymousMethods.cs" />
+    <Compile Include="DelegateTopic\TestDelegate.cs" />
+    <Compile Include="DelegateTopic\TestLambdaExpressions.cs" />
+    <Compile Include="DelegateTopic\TestMultiCastDelegate.cs" />
     <Compile Include="DoubleInNaN\TestDoubleInNaN.cs" />
+    <Compile Include="ExtensionMethodTopic\ExtensionStatic.cs" />
+    <Compile Include="ExtensionMethodTopic\LegacyApplication.cs" />
+    <Compile Include="ExtensionMethodTopic\TestExtension.cs" />
     <Compile Include="FreshDeskTicketSystem\FDConstant.cs" />
     <Compile Include="FreshDeskTicketSystem\GetAllTickets.cs" />
     <Compile Include="FreshDeskTicketSystem\GetTicketById.cs" />
@@ -63,12 +71,13 @@
     <Compile Include="GFG\Array\Array7.cs" />
     <Compile Include="GFG\Array\Helper.cs" />
     <Compile Include="GFG\String\String1.cs" />
-    <Compile Include="Indexer\Employee.cs" />
-    <Compile Include="Indexer\TestEmployee.cs" />
+    <Compile Include="IndexerTopic\Employee.cs" />
+    <Compile Include="IndexerTopic\TestEmployee.cs" />
     <Compile Include="InheritanceTopic\Class1.cs" />
     <Compile Include="InheritanceTopic\Class2.cs" />
     <Compile Include="InheritanceTopic\Class3.cs" />
     <Compile Include="InheritanceTopic\Class4.cs" />
+    <Compile Include="InheritanceTopic\MultiLevelInheritance.cs" />
     <Compile Include="InterfaceTopic\ImplementationClass.cs" />
     <Compile Include="InterfaceTopic\Interface1.cs" />
     <Compile Include="InterfaceTopic\Interface2.cs" />

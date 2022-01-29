@@ -1,4 +1,4 @@
-﻿namespace CSharpDotNet.Indexer
+﻿namespace CSharpDotNet.IndexerTopic
 {
     class Employee
     {
@@ -49,6 +49,7 @@
             set
             {
                 //While Set, "value" keyword is being used to receive the value from the outer class
+                //Basically value is an implicit variable that provides access to the value provided by the user
                 //Also value has to be converted into the specific datatype of the attribute, since value is object type
                 if (Index == 0) EmployeeID = (int)value;
                 else if (Index == 1) EmployeeName = (string)value;
@@ -83,6 +84,7 @@
             set
             {
                 //While Set, "value" keyword is being used to receive the value from the outer class
+                //Basically value is an implicit variable that provides access to the value provided by the user
                 //Also value has to be converted into the specific datatype of the attribute, since value is object type
                 if (PropertyName.ToUpper() == "EMPLOYEEID") EmployeeID = (int)value;
                 else if (PropertyName.ToUpper() == "EMPLOYEENAME") EmployeeName = (string)value;

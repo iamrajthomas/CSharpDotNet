@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CSharpDotNet.Indexer
+namespace CSharpDotNet.IndexerTopic
 {
     class TestEmployee
     {
