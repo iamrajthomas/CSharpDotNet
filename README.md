@@ -1,5 +1,5 @@
 # CSharpDotNet
-This repo demonstrates the concepts of C#.Net, OOPS, Design Pattern, GFG Problem, Code Refactor etc. 
+This repo demonstrates the various concepts of C#.Net, OOPS, Design Pattern, GFG Problem, Code Refactor etc. 
 
 # List of topics I've covered are listed below:
 
