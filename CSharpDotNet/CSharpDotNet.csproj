@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpDotNet.CollectionTopic.TestIComparableAndIComparerInterfaces</StartupObject>
+    <StartupObject>CSharpDotNet.CollectionTopic.TestIEnumerableInterfaceWithGenerics</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,7 +51,9 @@
     <Compile Include="AbstractTopic\TestAbsClass2.cs" />
     <Compile Include="AnonymousType\TestAnonymousType.cs" />
     <Compile Include="CollectionTopic\TestGenericCollections.cs" />
+    <Compile Include="CollectionTopic\TestIEnumerableInterfaceWithGenerics.cs" />
     <Compile Include="CollectionTopic\TestIComparableAndIComparerInterfaces.cs" />
+    <Compile Include="CollectionTopic\TestIEnumerableInterface.cs" />
     <Compile Include="CollectionTopic\TestNonGenericCollections.cs" />
     <Compile Include="CollectionTopic\TestUserDefinedGenericClassWithProblem.cs" />
     <Compile Include="CollectionTopic\TestUserDefinedGenericClassWithSolution.cs" />
