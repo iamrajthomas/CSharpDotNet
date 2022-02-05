@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpDotNet.CollectionTopic.TestIEnumerableInterfaceWithGenerics</StartupObject>
+    <StartupObject>CSharpDotNet.EnumTopic.TestEnum</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -65,6 +65,7 @@
     <Compile Include="DelegateTopic\TestLambdaExpressions.cs" />
     <Compile Include="DelegateTopic\TestMultiCastDelegate.cs" />
     <Compile Include="DoubleInNaN\TestDoubleInNaN.cs" />
+    <Compile Include="EnumTopic\TestEnum.cs" />
     <Compile Include="ExtensionMethodTopic\ExtensionStatic.cs" />
     <Compile Include="ExtensionMethodTopic\LegacyApplication.cs" />
     <Compile Include="ExtensionMethodTopic\TestExtension.cs" />
