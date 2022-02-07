@@ -11,12 +11,19 @@ namespace CSharpDotNet.YieldTopic
         public void Invoke()
         {
             List<int> numList = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            //var data = CalculateRunningTotal(numList);
-            //foreach (var item in data)
-            //{
-            //    Console.WriteLine("item: " + item);
-            //}
 
+            // Appraoch - 1
+            // Here the complete running total is calculated and retured at once
+            // results printed once the calculation is completed for the entire list
+            var data = CalculateRunningTotal(numList);
+            foreach (var item in data)
+            {
+                Console.WriteLine("item: " + item);
+            }
+
+            // Appraoch - 2
+            // Here the running total is calculated and retured one at a time
+            // results printing doens't need to wait till all the calculation is completed for the entire list
             foreach (var item in CalculateRunningTotalUsingYield(numList))
             {
                 Console.WriteLine("item: " + item);

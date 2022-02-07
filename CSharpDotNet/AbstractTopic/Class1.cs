@@ -16,6 +16,7 @@ namespace CSharpDotNet.AbstractTopic
         static void Main()
         {
             TestAbsClass1.Test1();
+            Class1.Test1();
 
             Class1 class1 = new Class1();
             class1.Test2();
@@ -24,6 +25,9 @@ namespace CSharpDotNet.AbstractTopic
             // AbstractReference can call the methods overriden in child class. This is possible.
             TestAbsClass1 abstractReference = class1;
             abstractReference.Test2();
+
+
+            Console.ReadLine();
 
         }
     }

@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharpDotNet.CollectionTopic
 {
@@ -14,7 +10,7 @@ namespace CSharpDotNet.CollectionTopic
         /// </summary>
         public static void TestArrayList()
         {
-            ArrayList arrayList = new ArrayList();
+            ArrayList arrayList = new ArrayList(); //initial capacity = 0
             //ArrayList arrayList = new ArrayList(5); // initial capacity = 5
             Console.WriteLine("ArrayList Capacity: " + arrayList.Capacity); //initial capacity = 0
 
@@ -107,9 +103,13 @@ namespace CSharpDotNet.CollectionTopic
 
         static void Main()
         {
+            Console.WriteLine("=======================================================");
             //TestArrayList();
+            Console.WriteLine("=======================================================");
             //TestHashTable();
+            Console.WriteLine("=======================================================");
             TestNonGenericCollectionDisadvantages();
+            Console.WriteLine("=======================================================");
             Console.ReadLine();
         }
     }

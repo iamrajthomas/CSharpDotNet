@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpDotNet.EnumTopic.TestEnum</StartupObject>
+    <StartupObject>CSharpDotNet.YieldTopic.TestYieldBehaviour</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -66,6 +66,7 @@
     <Compile Include="DelegateTopic\TestMultiCastDelegate.cs" />
     <Compile Include="DoubleInNaN\TestDoubleInNaN.cs" />
     <Compile Include="EnumTopic\TestEnum.cs" />
+    <Compile Include="ExceptionTopic\TestException.cs" />
     <Compile Include="ExtensionMethodTopic\ExtensionStatic.cs" />
     <Compile Include="ExtensionMethodTopic\LegacyApplication.cs" />
     <Compile Include="ExtensionMethodTopic\TestExtension.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="FreshDeskTicketSystem\GetTicketById.cs" />
     <Compile Include="FreshDeskTicketSystem\Helper.cs" />
     <Compile Include="FreshDeskTicketSystem\Startup.cs" />
+    <Compile Include="GarbageCollectorTopic\TestGC.cs" />
     <Compile Include="GFG\Array\Array1.cs" />
     <Compile Include="GFG\Array\Array4.cs" />
     <Compile Include="GFG\Array\Array5.cs" />

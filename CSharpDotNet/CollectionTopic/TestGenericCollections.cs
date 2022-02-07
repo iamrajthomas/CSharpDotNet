@@ -10,6 +10,7 @@ namespace CSharpDotNet.CollectionTopic
         /// </summary>
         static void TestList()
         {
+            // List<T> list = new List<T>(); //T refers to Type (both pre-defined/ user-defined)
             List<int> list = new List<int>();
             list.Add(10);
             list.Add(20);

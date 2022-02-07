@@ -24,6 +24,8 @@ namespace CSharpDotNet.InheritanceTopic
             Class1 parentInstance = new Class1();
             parentInstance.Test1();
             parentInstance.Test2();
+            //parentInstance.Test3(); //Wont appear at all
+            //parentInstance.Test4(); //Wont appear at all
 
             Class2 childInstnace = new Class2();
             childInstnace.Test1();
@@ -34,6 +36,8 @@ namespace CSharpDotNet.InheritanceTopic
             Class1 parentReference = childInstnace;
             parentReference.Test1();
             parentReference.Test2();
+            //parentReference.Test3(); //Wont appear at all
+            //parentReference.Test4(); //Wont appear at all
         }
     }
 }

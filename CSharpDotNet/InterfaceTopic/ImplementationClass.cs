@@ -31,10 +31,15 @@ namespace CSharpDotNet.InterfaceTopic
             classInstance.Add(100, 50);
             classInstance.Sub(100, 50);
 
+            ITestInterface1 interface1Reference = classInstance;
+            interface1Reference.Add(100, 50);
 
-            ITestInterface2 interfaceReference = classInstance;
-            interfaceReference.Add(100, 50);
-            interfaceReference.Sub(100, 50);
+
+            ITestInterface2 interface2Reference = classInstance;
+            interface2Reference.Add(100, 50);
+            interface2Reference.Sub(100, 50);
+
+
 
             Console.ReadLine();
         }

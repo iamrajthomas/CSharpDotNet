@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharpDotNet.RefOutTuples
 {
@@ -17,10 +13,16 @@ namespace CSharpDotNet.RefOutTuples
         }
 
         #region REF KEYWORD
+        /// <summary>
+        /// Ref has to be initialized
+        /// Out is not required to be initialized but The out parameter must be assigned to before control leaves the current method
+        /// </summary>
         private static void TestRef()
         {
-            string first = "Raj";
-            var last = "Thomas";
+            string first = "Raj"; //initialized to avoid CE
+            string last = "Thomas"; //initialized to avoid CE
+            //string first; // Compile Time Error
+            //string last; // Compile Time Error
             string FirstName = GetNameWithRefParameter(ref first, ref last);
 
             Console.WriteLine(FirstName + "  -- " + last);
@@ -36,15 +38,21 @@ namespace CSharpDotNet.RefOutTuples
         #region OUT KEYWORD
         public static string GetNameWithOutParameter(out string FirstName, out string LastName)
         {
-            FirstName = "Rajesh"; // ERROR: The out parameter 'FirstName' must be assigned to before control leaves the current method
-            LastName = "Albert Einstein"; // ERROR: The out parameter 'LastName' must be assigned to before control leaves the current method
-            return FirstName;
+            FirstName = "Albert"; // ERROR: The out parameter 'FirstName' must be assigned to before control leaves the current method
+            LastName = "Einstein"; // ERROR: The out parameter 'LastName' must be assigned to before control leaves the current method
+            return FirstName + " " + LastName;
         }
 
+        /// <summary>
+        /// Ref has to be initialized
+        /// Out is not required to be initialized but The out parameter must be assigned to before control leaves the current method
+        /// </summary>
         private static void TestOut()
         {
-            string first = "Raj";
-            var last = "Thomas";
+            //string first = "Raj";
+            //string last = "Thomas";
+            string first;
+            string last;
             string FirstName = GetNameWithOutParameter(out first, out last);
 
             Console.WriteLine(FirstName + "  -- " + last);
@@ -54,8 +62,8 @@ namespace CSharpDotNet.RefOutTuples
         #region Tuple
         private static Tuple<string, string> GetNameWithTuple(string FirstName, string LastName)
         {
-            FirstName = "Raj Rajesh";
-            LastName = "Albert Einstein";
+            FirstName = "Albert";
+            LastName = "Einstein";
             var tuple = new Tuple<string, string>(FirstName, LastName);
             return tuple;
         }

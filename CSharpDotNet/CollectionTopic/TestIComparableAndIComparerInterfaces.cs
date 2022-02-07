@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharpDotNet.CollectionTopic
 {
@@ -52,7 +49,7 @@ namespace CSharpDotNet.CollectionTopic
             // We can define a sort method keeping the same signature as this delegate and bind it
             // Create an instance of delegate and pass the object to sort. The sorting will be done.
 
-            Comparison<StudentModel> comparisonDelegate = new Comparison<StudentModel>(CompareStudentNames); // craeted delegat instance and bound method.
+            Comparison<StudentModel> comparisonDelegate = new Comparison<StudentModel>(CompareStudentNames); // created delegate instance and bound method.
 
             StudentModel s1 = new StudentModel() { Sid = 701, Name = "Joe", Class = 10, Marks = 557.00f };
             StudentModel s2 = new StudentModel() { Sid = 552, Name = "Marvin", Class = 9, Marks = 471.00f };

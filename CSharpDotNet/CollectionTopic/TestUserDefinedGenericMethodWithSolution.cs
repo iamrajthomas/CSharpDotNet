@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharpDotNet.CollectionTopic
 {
@@ -13,7 +9,7 @@ namespace CSharpDotNet.CollectionTopic
     // If we have to make it work for float, double datatype then we again need to write same logic with input parameters are different datatypes as float, double
     // SOLUTION: We can define a generic method with Compare<T>(T a, T b), which can take any datatype and the datatype will be decided during calling the method, shown below
     // Calling: Compare<int>(10, 20); Compare<float>(12.34f, 12.34f); 
-    // The datatype will be dynamic and make vary but the operation remains same i.e. Compare the two inputs
+    // The datatype will be dynamic and may vary but the operation remains same i.e. Compare the two inputs
     class TestUserDefinedGenericMethodWithSolution
     {
         //static bool Compare(int a, int b)

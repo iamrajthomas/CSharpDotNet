@@ -8,6 +8,12 @@ namespace CSharpDotNet.DesignPattern.SingletonPattern
 {
     /// <summary>
     /// Thread Safe Singleton without using locks and no lazy instantiation
+    /// -- sealed class
+    /// -- one private static instance created, no lazy instantiation
+    /// -- ctor private
+    /// -- one public static getInstance property
+    /// -- LockInstance new object instance and lock in getInstance method
+    /// -- static ctor
     /// </summary>
     sealed class Singleton4
     {

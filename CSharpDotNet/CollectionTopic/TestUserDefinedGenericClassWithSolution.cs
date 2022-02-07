@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSharpDotNet.CollectionTopic
 {
@@ -146,12 +143,8 @@ namespace CSharpDotNet.CollectionTopic
 
         static void Main()
         {
-
             TestUserDefinedGenericClassWithSolutionMain_Class();
-
-
-            Console.WriteLine("************************** =============== **************************");
-
+            Console.WriteLine("******************************************************************************");
             TestUserDefinedGenericClassWithSolutionMainWithTwoGenericInput_Class();
             Console.ReadLine();
 

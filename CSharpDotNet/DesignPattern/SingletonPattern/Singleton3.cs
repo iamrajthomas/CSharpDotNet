@@ -8,6 +8,12 @@ namespace CSharpDotNet.DesignPattern.SingletonPattern
 {
     /// <summary>
     /// Thread Safety Singleton using Double-Check Locking
+    /// -- sealed class
+    /// -- one private static instance
+    /// -- ctor private
+    /// -- one public static getInstance property
+    /// -- LockInstance new object instance and lock in getInstance method
+    /// -- double instance null check
     /// </summary>
     sealed class Singleton3
     {

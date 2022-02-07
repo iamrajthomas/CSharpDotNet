@@ -3,9 +3,8 @@
 namespace CSharpDotNet.DelegateTopic
 {
     // Step - 1: Define Delegate 
-    public delegate void RectangleDelegate(double height, double width);
-    public delegate string RectangleDelegate2(double height, double width);
-
+    public delegate void RectangleDelegate(double height, double width); //non-value returning delegate
+    public delegate string RectangleDelegate2(double height, double width); //value returning delegate
     class TestMultiCastDelegate
     {
         // Non-value returning methods

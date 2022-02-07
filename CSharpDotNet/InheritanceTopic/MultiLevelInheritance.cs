@@ -68,10 +68,11 @@ namespace CSharpDotNet.InheritanceTopic
 
             #region Scenario - 3
 
-            // ChildClass ParentRef = (ChildClass)new ParentClassConstructor(); // Not Possible with explicit conversion
+            // ChildClass ChidRef = (ChildClass)new ParentClassConstructor(); // Not Possible with explicit conversion
             // Even if the conversion is done and no compilation error, it will fail at run-time
             // Reason is: When a parent class constructor is called for creating a child ref, the parent ctor will not have any access to child class ctor
-            // As the parent ctor is not called, no members get initialized at child class. So it will fail at run-time
+            // As the child ctor is not called, no members get initialized at child class. So it will fail at run-time.
+            // Bottom to Top access is possible but not reverse!!
 
             // Error Message: Unable to cast object of type 'CSharpDotNet.InheritanceTopic.ClassA' to type 'CSharpDotNet.InheritanceTopic.ClassB'.
             //ClassB classBRef2 = (ClassB)new ClassA();

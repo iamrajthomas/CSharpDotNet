@@ -8,6 +8,11 @@ namespace CSharpDotNet.DesignPattern.SingletonPattern
 {
     /// <summary>
     /// No Thread Safe Singleton
+    /// Singleton Pattern:
+    /// -- sealed class
+    /// -- one private static instance
+    /// -- ctor private
+    /// -- one public static getInstance method
     /// </summary>
     sealed class Singleton
     {
@@ -28,3 +33,4 @@ namespace CSharpDotNet.DesignPattern.SingletonPattern
         }
     }
 }
+

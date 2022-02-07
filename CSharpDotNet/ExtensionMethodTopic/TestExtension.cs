@@ -59,3 +59,11 @@ namespace CSharpDotNet.ExtensionMethodTopic
         }
     }
 }
+
+
+
+#region Sequence
+//1. TestExtension
+//2. LegacyApplication
+//3. ExtensionStatic
+#endregion

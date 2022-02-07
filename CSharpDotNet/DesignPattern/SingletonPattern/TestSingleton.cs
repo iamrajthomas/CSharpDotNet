@@ -15,11 +15,11 @@ namespace CSharpDotNet.DesignPattern.SingletonPattern
 
             if (Instance1 == Instance2)
             {
-                Console.WriteLine("INSTANCE EQUAL");
+                Console.WriteLine("Singleton INSTANCE EQUAL");
             }
             else
             {
-                Console.WriteLine("INSTANCE NOT EQUAL");
+                Console.WriteLine("Singleton INSTANCE NOT EQUAL");
             }
 
             Console.WriteLine("===================================================================================");
@@ -29,11 +29,11 @@ namespace CSharpDotNet.DesignPattern.SingletonPattern
 
             if (singleton2Instance1 == singleton2Instance2)
             {
-                Console.WriteLine("INSTANCE EQUAL");
+                Console.WriteLine("Singleton2 INSTANCE EQUAL");
             }
             else
             {
-                Console.WriteLine("INSTANCE NOT EQUAL");
+                Console.WriteLine("Singleton2 INSTANCE NOT EQUAL");
             }
 
             Console.WriteLine("===================================================================================");
@@ -43,12 +43,31 @@ namespace CSharpDotNet.DesignPattern.SingletonPattern
 
             if (singleton3Instance1 == singleton3Instance2)
             {
-                Console.WriteLine("INSTANCE EQUAL");
+                Console.WriteLine("Singleton3 INSTANCE EQUAL");
             }
             else
             {
-                Console.WriteLine("INSTANCE NOT EQUAL");
+                Console.WriteLine("Singleton3 INSTANCE NOT EQUAL");
             }
+
+            Console.WriteLine("===================================================================================");
+
+            Singleton5 singleton5Instance1 = Singleton5.GetInstance;
+            Singleton5 singleton5Instance2 = Singleton5.GetInstance;
+            if (singleton5Instance1 == singleton5Instance2)
+            {
+                Console.WriteLine("Singleton5 INSTANCE EQUAL");
+            }
+            else
+            {
+                Console.WriteLine("Singleton5 INSTANCE NOT EQUAL");
+            }
+        }
+
+
+        static void Main()
+        {
+            Invoke();
 
         }
 
@@ -56,3 +75,12 @@ namespace CSharpDotNet.DesignPattern.SingletonPattern
 
     }
 }
+
+#region Sequence
+//1. TestSingleton
+//2. Singleton1
+//3. Singleton2
+//4. Singleton3
+//5. Singleton4
+//5. Singleton5
+#endregion

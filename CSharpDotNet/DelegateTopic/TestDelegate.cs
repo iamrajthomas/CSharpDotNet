@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace CSharpDotNet.DelegateTopic
 {
     // Step - 1: Define Delegate 
+    // Delegate should match the signature of the method, it is going to be bound with
     public delegate void AddNumsDelegate(int x, int y);
     public delegate string SayHelloDelegate(string inputValue);
 
@@ -38,7 +39,7 @@ namespace CSharpDotNet.DelegateTopic
         public static void PerformWithoutDelegateRelatedOperation()
         {
             TestDelegate testDelegate = new TestDelegate();
-            testDelegate.AddNums(10, 20);
+            testDelegate.AddNums(10, 20); //call method with the instance of class
             var result = SayHello("Alex");
             Console.WriteLine(result);
         }
@@ -90,3 +91,12 @@ namespace CSharpDotNet.DelegateTopic
         }
     }
 }
+
+
+#region Sequence
+//1. TestDelegate
+//2. TestMultiCastDelegate
+//3. TestAnonymousMethods
+//4. TestLambdaExpressions
+//5. GenericDelegates
+#endregion

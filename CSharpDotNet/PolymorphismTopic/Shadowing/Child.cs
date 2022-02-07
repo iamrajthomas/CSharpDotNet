@@ -38,6 +38,12 @@ namespace CSharpDotNet.PolymorphismTopic.Shadowing
             parentReference.Test1(); //Invokes child Test1 because this is overriden method, so it is not pure child class method and considers as parent method only.
             parentReference.Test2(); //Invokes parent Test2 because this is shadowed method, so it is pure child class method and considers as child method only.
 
+
+            //Child childRef = parentInstance; // This is not possible anyway!!
+            Child childRef = (Child)parentReference; // This is possible with explicit conversion!!
+            childRef.Test1();
+            childRef.Test2();
+
             Console.ReadLine();
         }
     }

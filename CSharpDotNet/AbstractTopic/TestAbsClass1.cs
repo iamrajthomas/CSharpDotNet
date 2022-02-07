@@ -9,7 +9,7 @@ namespace CSharpDotNet.AbstractTopic
     abstract class TestAbsClass1
     {
         /// <summary>
-        /// This is Concrete Class
+        /// This is static Concrete Class
         /// </summary>
         public static void Test1()
         {
@@ -25,6 +25,14 @@ namespace CSharpDotNet.AbstractTopic
         /// Error CS0513	'TestAbsClass1.Test2()' is abstract but it is contained in non-abstract class 'TestAbsClass1'
         /// </summary>
         public abstract void Test2();
+
+        /// <summary>
+        /// This is Concrete Class
+        /// </summary>
+        public void Test3()
+        {
+            Console.WriteLine("Test 3"); 
+        }
 
     }
 }
