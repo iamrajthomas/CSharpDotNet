@@ -17,6 +17,8 @@ This repo demonstrates the various concepts of C#.Net, OOPS, Design Pattern, GFG
 
 > DoubleInNaN
 
+> EnumTopic
+
 > ExtensionMethodTopic
 
 > FreshDeskTicketSystem
