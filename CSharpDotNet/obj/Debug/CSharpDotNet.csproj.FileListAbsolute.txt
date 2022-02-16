@@ -11,4 +11,3 @@ C:\TFS\source\repos\CSharpDotNet\CSharpDotNet\bin\Debug\CSharpDotNet.pdb
 C:\TFS\source\repos\CSharpDotNet\CSharpDotNet\obj\Debug\CSharpDotNet.csproj.CoreCompileInputs.cache
 C:\TFS\source\repos\CSharpDotNet\CSharpDotNet\obj\Debug\CSharpDotNet.exe
 C:\TFS\source\repos\CSharpDotNet\CSharpDotNet\obj\Debug\CSharpDotNet.pdb
-C:\TFS\source\repos\CSharpDotNet\CSharpDotNet\obj\Debug\CSharpDotNet.csprojAssemblyReference.cache

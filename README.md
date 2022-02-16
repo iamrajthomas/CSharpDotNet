@@ -37,6 +37,10 @@ This repo demonstrates the various concepts of C#.Net, OOPS, Design Pattern, GFG
 
 > Memoization
 
+> MemoryManagementTopic
+
+> MultithreadingTopic
+
 > Performance
 
 > PolymorphismTopic

@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpDotNet.YieldTopic.TestYieldBehaviour</StartupObject>
+    <StartupObject>CSharpDotNet.MultiThreadingTopic.Multithreading8_ThreadPerformance</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -95,6 +95,15 @@
     <Compile Include="InterfaceTopic\Interface2.cs" />
     <Compile Include="InterfaceTopic\TestInterface.cs" />
     <Compile Include="Memoization\FibonacciChecks.cs" />
+    <Compile Include="MemoryManagementTopic\TestMemoryManagement.cs" />
+    <Compile Include="MultiThreadingTopic\Multithreading1_Intro.cs" />
+    <Compile Include="MultiThreadingTopic\Multithreading2_ProblemStatement.cs" />
+    <Compile Include="MultiThreadingTopic\Multithreading3_Solution.cs" />
+    <Compile Include="MultiThreadingTopic\Multithreading4_ctor.cs" />
+    <Compile Include="MultiThreadingTopic\Multithreading5_join.cs" />
+    <Compile Include="MultiThreadingTopic\Multithreading6_ThreadLocking.cs" />
+    <Compile Include="MultiThreadingTopic\Multithreading8_ThreadPerformance.cs" />
+    <Compile Include="MultiThreadingTopic\Multithreading7_ThreadPriority.cs" />
     <Compile Include="Performance\StringManipulationPerformance.cs" />
     <Compile Include="PolymorphismTopic\Shadowing\Child.cs" />
     <Compile Include="PolymorphismTopic\Shadowing\Parent.cs" />
@@ -112,6 +121,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SemaphoreTopic\TestSemaphore.cs" />
+    <Compile Include="StringIntern\TestStringIntern.cs" />
     <Compile Include="YieldTopic\TestYieldBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>
