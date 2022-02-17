@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpDotNet.MultiThreadingTopic.Multithreading8_ThreadPerformance</StartupObject>
+    <StartupObject>CSharpDotNet.MultiThreadingTopic.Multithreading6_1_ThreadWithMonitor</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -101,6 +101,7 @@
     <Compile Include="MultiThreadingTopic\Multithreading3_Solution.cs" />
     <Compile Include="MultiThreadingTopic\Multithreading4_ctor.cs" />
     <Compile Include="MultiThreadingTopic\Multithreading5_join.cs" />
+    <Compile Include="MultiThreadingTopic\Multithreading6_1_ThreadWithMonitor.cs" />
     <Compile Include="MultiThreadingTopic\Multithreading6_ThreadLocking.cs" />
     <Compile Include="MultiThreadingTopic\Multithreading8_ThreadPerformance.cs" />
     <Compile Include="MultiThreadingTopic\Multithreading7_ThreadPriority.cs" />
@@ -129,6 +130,7 @@
     <Compile Include="DesignPattern\SingletonPattern\Singleton5.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="MultiThreadingWithTaskParallelLibraryTopic\" />
     <Folder Include="PolymorphismTopic\Overloading\" />
     <Folder Include="PolymorphismTopic\Overriding\" />
   </ItemGroup>
