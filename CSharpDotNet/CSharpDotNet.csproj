@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpDotNet.LINQ.DeferredAndImmediateExecution</StartupObject>
+    <StartupObject>CSharpDotNet.DataTypeConversionTopic.TestDataTypeConversion</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,6 +50,9 @@
     <Compile Include="AbstractTopic\TestAbsClass1.cs" />
     <Compile Include="AbstractTopic\TestAbsClass2.cs" />
     <Compile Include="AnonymousType\TestAnonymousType.cs" />
+    <Compile Include="AttributeTopic\HelpMessageAttribute.cs" />
+    <Compile Include="AttributeTopic\TestAttribute.cs" />
+    <Compile Include="AttributeTopic\TestHelpMessageAttribute.cs" />
     <Compile Include="CheckedKeywordTopic\TestCheckedKeyword.cs" />
     <Compile Include="CollectionTopic\TestGenericCollections.cs" />
     <Compile Include="CollectionTopic\TestIEnumerableInterfaceWithGenerics.cs" />
@@ -60,6 +63,7 @@
     <Compile Include="CollectionTopic\TestUserDefinedGenericClassWithSolution.cs" />
     <Compile Include="CollectionTopic\TestUserDefinedGenericMethodWithProblem.cs" />
     <Compile Include="CollectionTopic\TestUserDefinedGenericMethodWithSolution.cs" />
+    <Compile Include="DataTypeConversionTopic\TestDataTypeConversion.cs" />
     <Compile Include="DelegateTopic\GenericDelegates.cs" />
     <Compile Include="DelegateTopic\TestAnonymousMethods.cs" />
     <Compile Include="DelegateTopic\TestDelegate.cs" />

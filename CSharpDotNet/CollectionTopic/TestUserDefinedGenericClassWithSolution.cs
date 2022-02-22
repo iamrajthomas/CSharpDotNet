@@ -12,7 +12,7 @@ namespace CSharpDotNet.CollectionTopic
     // The entire class can take any datatype and the datatype will be decided during instantiating the class (Just like List class), shown below
     // Instantiating: TestUserDefinedGenericClassWithSolution<T> obj = new TestUserDefinedGenericClassWithSolution<T>
     // The datatype will be dynamic 
-    class TestUserDefinedGenericClassWithSolutionMain<T>
+    public class TestUserDefinedGenericClassWithSolutionMain<T> 
     {
         public void Add(T a, T b)
         {
