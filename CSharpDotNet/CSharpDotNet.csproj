@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpDotNet.MultiThreadingTopic.Multithreading6_1_ThreadWithMonitor</StartupObject>
+    <StartupObject>CSharpDotNet.LINQ.DeferredAndImmediateExecution</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,6 +50,7 @@
     <Compile Include="AbstractTopic\TestAbsClass1.cs" />
     <Compile Include="AbstractTopic\TestAbsClass2.cs" />
     <Compile Include="AnonymousType\TestAnonymousType.cs" />
+    <Compile Include="CheckedKeywordTopic\TestCheckedKeyword.cs" />
     <Compile Include="CollectionTopic\TestGenericCollections.cs" />
     <Compile Include="CollectionTopic\TestIEnumerableInterfaceWithGenerics.cs" />
     <Compile Include="CollectionTopic\TestIComparableAndIComparerInterfaces.cs" />
@@ -82,7 +83,9 @@
     <Compile Include="GFG\Array\Array6.cs" />
     <Compile Include="GFG\Array\Array7.cs" />
     <Compile Include="GFG\Array\Helper.cs" />
+    <Compile Include="GFG\String\ReverseWordOrder.cs" />
     <Compile Include="GFG\String\String1.cs" />
+    <Compile Include="GFG\String\TestReverseString.cs" />
     <Compile Include="IndexerTopic\Employee.cs" />
     <Compile Include="IndexerTopic\TestEmployee.cs" />
     <Compile Include="InheritanceTopic\Class1.cs" />
@@ -94,6 +97,8 @@
     <Compile Include="InterfaceTopic\Interface1.cs" />
     <Compile Include="InterfaceTopic\Interface2.cs" />
     <Compile Include="InterfaceTopic\TestInterface.cs" />
+    <Compile Include="LINQ\DeferredAndImmediateExecution.cs" />
+    <Compile Include="LINQ\TestWhere.cs" />
     <Compile Include="Memoization\FibonacciChecks.cs" />
     <Compile Include="MemoryManagementTopic\TestMemoryManagement.cs" />
     <Compile Include="MultiThreadingTopic\Multithreading1_Intro.cs" />
@@ -106,6 +111,7 @@
     <Compile Include="MultiThreadingTopic\Multithreading8_ThreadPerformance.cs" />
     <Compile Include="MultiThreadingTopic\Multithreading7_ThreadPriority.cs" />
     <Compile Include="Performance\StringManipulationPerformance.cs" />
+    <Compile Include="Pointers\TestPointers.cs" />
     <Compile Include="PolymorphismTopic\Shadowing\Child.cs" />
     <Compile Include="PolymorphismTopic\Shadowing\Parent.cs" />
     <Compile Include="CodeRefactor\Refactor1.cs" />

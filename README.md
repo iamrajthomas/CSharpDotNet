@@ -7,6 +7,8 @@ This repo demonstrates the various concepts of C#.Net, OOPS, Design Pattern, GFG
 
 > AnonymousType
 
+> "Checked" KeywordTopic
+
 > CodeRefactor
 
 > CollectionTopic
@@ -35,6 +37,8 @@ This repo demonstrates the various concepts of C#.Net, OOPS, Design Pattern, GFG
 
 > InterfaceTopic
 
+> LINQ
+
 > Memoization
 
 > MemoryManagementTopic
@@ -42,6 +46,8 @@ This repo demonstrates the various concepts of C#.Net, OOPS, Design Pattern, GFG
 > MultithreadingTopic
 
 > Performance
+
+> Pointers
 
 > PolymorphismTopic
 
