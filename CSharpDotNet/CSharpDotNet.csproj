@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpDotNet.DataTypeConversionTopic.TestDataTypeConversion</StartupObject>
+    <StartupObject>CSharpDotNet.EventTopic.Invoker</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -71,6 +71,8 @@
     <Compile Include="DelegateTopic\TestMultiCastDelegate.cs" />
     <Compile Include="DoubleInNaN\TestDoubleInNaN.cs" />
     <Compile Include="EnumTopic\TestEnum.cs" />
+    <Compile Include="EventTopic\Publisher.cs" />
+    <Compile Include="EventTopic\Subscriber.cs" />
     <Compile Include="ExceptionTopic\TestException.cs" />
     <Compile Include="ExtensionMethodTopic\ExtensionStatic.cs" />
     <Compile Include="ExtensionMethodTopic\LegacyApplication.cs" />
@@ -114,6 +116,7 @@
     <Compile Include="MultiThreadingTopic\Multithreading6_ThreadLocking.cs" />
     <Compile Include="MultiThreadingTopic\Multithreading8_ThreadPerformance.cs" />
     <Compile Include="MultiThreadingTopic\Multithreading7_ThreadPriority.cs" />
+    <Compile Include="MultiThreadingWithTaskParallelLibraryTopic\TestTPL.cs" />
     <Compile Include="Performance\StringManipulationPerformance.cs" />
     <Compile Include="Pointers\TestPointers.cs" />
     <Compile Include="PolymorphismTopic\Shadowing\Child.cs" />
@@ -140,7 +143,6 @@
     <Compile Include="DesignPattern\SingletonPattern\Singleton5.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="MultiThreadingWithTaskParallelLibraryTopic\" />
     <Folder Include="PolymorphismTopic\Overloading\" />
     <Folder Include="PolymorphismTopic\Overriding\" />
   </ItemGroup>
