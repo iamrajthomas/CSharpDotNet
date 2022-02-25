@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpDotNet.EventTopic.Invoker</StartupObject>
+    <StartupObject>CSharpDotNet.EnvironmentVariableTopic.TestEnvironmentVariable</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -71,9 +71,11 @@
     <Compile Include="DelegateTopic\TestMultiCastDelegate.cs" />
     <Compile Include="DoubleInNaN\TestDoubleInNaN.cs" />
     <Compile Include="EnumTopic\TestEnum.cs" />
+    <Compile Include="EnvironmentVariableTopic\TestEnvironmentVariable.cs" />
     <Compile Include="EventTopic\Publisher.cs" />
     <Compile Include="EventTopic\Subscriber.cs" />
     <Compile Include="ExceptionTopic\TestException.cs" />
+    <Compile Include="ExceptionTopic\TestExceptionThrow.cs" />
     <Compile Include="ExtensionMethodTopic\ExtensionStatic.cs" />
     <Compile Include="ExtensionMethodTopic\LegacyApplication.cs" />
     <Compile Include="ExtensionMethodTopic\TestExtension.cs" />
