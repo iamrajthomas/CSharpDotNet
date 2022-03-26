@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpDotNet.EnvironmentVariableTopic.TestEnvironmentVariable</StartupObject>
+    <StartupObject>CSharpDotNet.TestRandomThings.Test2</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -84,6 +84,7 @@
     <Compile Include="FreshDeskTicketSystem\GetTicketById.cs" />
     <Compile Include="FreshDeskTicketSystem\Helper.cs" />
     <Compile Include="FreshDeskTicketSystem\Startup.cs" />
+    <Compile Include="GarbageCollectorTopic\TestDisposableResource.cs" />
     <Compile Include="GarbageCollectorTopic\TestGC.cs" />
     <Compile Include="GFG\Array\Array1.cs" />
     <Compile Include="GFG\Array\Array4.cs" />
@@ -91,9 +92,11 @@
     <Compile Include="GFG\Array\Array6.cs" />
     <Compile Include="GFG\Array\Array7.cs" />
     <Compile Include="GFG\Array\Helper.cs" />
+    <Compile Include="GFG\String\CountNumberOfOccurance.cs" />
     <Compile Include="GFG\String\ReverseWordOrder.cs" />
     <Compile Include="GFG\String\String1.cs" />
     <Compile Include="GFG\String\TestReverseString.cs" />
+    <Compile Include="GFG\TailCallOptimization\TestTailCallOptimization.cs" />
     <Compile Include="IndexerTopic\Employee.cs" />
     <Compile Include="IndexerTopic\TestEmployee.cs" />
     <Compile Include="InheritanceTopic\Class1.cs" />
@@ -119,11 +122,13 @@
     <Compile Include="MultiThreadingTopic\Multithreading8_ThreadPerformance.cs" />
     <Compile Include="MultiThreadingTopic\Multithreading7_ThreadPriority.cs" />
     <Compile Include="MultiThreadingWithTaskParallelLibraryTopic\TestTPL.cs" />
+    <Compile Include="NullableTypesTopic\TestNullableTypes.cs" />
     <Compile Include="Performance\StringManipulationPerformance.cs" />
     <Compile Include="Pointers\TestPointers.cs" />
     <Compile Include="PolymorphismTopic\Shadowing\Child.cs" />
     <Compile Include="PolymorphismTopic\Shadowing\Parent.cs" />
     <Compile Include="CodeRefactor\Refactor1.cs" />
+    <Compile Include="ReflectionTopic\TestReflection.cs" />
     <Compile Include="RefOutTuples\TestRefOutTuples.cs" />
     <Compile Include="DesignPattern\SingletonPattern\Singleton.cs" />
     <Compile Include="DesignPattern\SingletonPattern\Singleton2.cs" />
@@ -138,6 +143,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SemaphoreTopic\TestSemaphore.cs" />
     <Compile Include="StringIntern\TestStringIntern.cs" />
+    <Compile Include="TestRandomThings\Test1.cs" />
+    <Compile Include="TestRandomThings\Test2_1.cs" />
     <Compile Include="YieldTopic\TestYieldBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>

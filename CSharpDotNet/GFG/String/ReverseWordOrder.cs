@@ -18,26 +18,65 @@ namespace CSharpDotNet.GFG.String
 
         }
 
-        internal static string ReverseGivenWordOrder(string str)
+        private static string ReverseGivenWordOrder(string inputStr)
         {
-            //Array => [1][2][3][4] : Size
-            //Array => [0][1][2][3] : Index
 
-            string[] strArray = str.Split(' ');
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i <= strArray.Length - 1; i++)
+            if (inputStr == null || inputStr == "") return inputStr;
+
+            string result = string.Empty;
+            string[] strArray = inputStr.Split(' ');
+            foreach (string s in strArray)
             {
-                char[] charArray = strArray[i].ToCharArray();
-                for (int j = 0, k = charArray.Length - 1; j < k; j++, k--)
+                char[] charArray = s.ToCharArray();
+                for (int i = charArray.Length - 1; i >= 0; i--)
                 {
-                    var temp = charArray[j];
-                    charArray[j] = charArray[k];
-                    charArray[k] = temp;
+                    result += charArray[i];
                 }
-                sb.Append(charArray);
-                sb.Append(' ');
+                result += ' ';
             }
-            return sb.ToString();
+
+            return result;
+
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //internal static string ReverseGivenWordOrder(string str)
+        //{
+        //    //Array => [1][2][3][4] : Size
+        //    //Array => [0][1][2][3] : Index
+
+        //    string[] strArray = str.Split(' ');
+        //    StringBuilder sb = new StringBuilder();
+        //    for (int i = 0; i <= strArray.Length - 1; i++)
+        //    {
+        //        char[] charArray = strArray[i].ToCharArray();
+        //        for (int j = 0, k = charArray.Length - 1; j < k; j++, k--)
+        //        {
+        //            var temp = charArray[j];
+        //            charArray[j] = charArray[k];
+        //            charArray[k] = temp;
+        //        }
+        //        sb.Append(charArray);
+        //        sb.Append(' ');
+        //    }
+        //    return sb.ToString();
+        //}
     }
 }

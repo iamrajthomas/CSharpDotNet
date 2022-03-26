@@ -21,10 +21,22 @@ namespace CSharpDotNet.YieldTopic
                 Console.WriteLine("item: " + item);
             }
 
+            Console.WriteLine("=========================================================================");
+            
             // Appraoch - 2
             // Here the running total is calculated and retured one at a time
             // results printing doens't need to wait till all the calculation is completed for the entire list
             foreach (var item in CalculateRunningTotalUsingYield(numList))
+            {
+                Console.WriteLine("item: " + item);
+            }
+
+            Console.WriteLine("=========================================================================");
+            
+            // Appraoch - 3
+            // Here the running total is calculated and retured one at a time
+            // results printing doens't need to wait till all the calculation is completed for the entire list
+            foreach (var item in CalculateRunningTotalUsingYield_v2(numList))
             {
                 Console.WriteLine("item: " + item);
             }
@@ -35,10 +47,18 @@ namespace CSharpDotNet.YieldTopic
         {
             var total = 0;
 
-            for (int i = 1; i < numList.Count; i++)
+            for (int i = 0; i < numList.Count; i++)
             {
                 total += numList[i];
                 yield return total;
+            }
+        }
+        public IEnumerable<int> CalculateRunningTotalUsingYield_v2(List<int> numList)
+        {
+            var total = 0;
+            foreach (var item in numList)
+            {
+                yield return (total += item);
             }
         }
 
@@ -46,7 +66,7 @@ namespace CSharpDotNet.YieldTopic
         {
             List<int> tempList = new List<int>();
             var total = 0;
-            for (int i = 1; i < numList.Count; i++)
+            for (int i = 0; i < numList.Count; i++)
             {
                 total += numList[i];
                 tempList.Add(total);

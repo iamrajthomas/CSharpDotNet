@@ -83,3 +83,14 @@ namespace CSharpDotNet.DelegateTopic
         }
     }
 }
+
+
+
+
+#region Sequence
+//1. TestDelegate
+//2. TestMultiCastDelegate
+//3. TestAnonymousMethods
+//4. TestLambdaExpressions
+//5. GenericDelegates
+#endregion

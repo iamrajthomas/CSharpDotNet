@@ -13,6 +13,7 @@ namespace CSharpDotNet.CollectionTopic
     // Instantiating: TestUserDefinedGenericClassWithSolution<T> obj = new TestUserDefinedGenericClassWithSolution<T>
     // The datatype will be dynamic 
     public class TestUserDefinedGenericClassWithSolutionMain<T> 
+         // where T : short, int, double, float 
     {
         public void Add(T a, T b)
         {

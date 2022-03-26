@@ -18,7 +18,7 @@ namespace CSharpDotNet.DesignPattern.SingletonPattern
         // If you are using .NET 4 or higher then you can use the System.Lazy<T> type to make the laziness really simple.
         // You can pass a delegate to the constructor that calls the Singleton constructor, which is done most easily with a lambda expression.
         // Allows you to check whether or not the instance has been created with the IsValueCreated property.
-        private static readonly Lazy<Singleton5> lazy = new Lazy<Singleton5>(() => new Singleton5());
+        private static readonly Lazy<Singleton5> lazyInstance = new Lazy<Singleton5>(() => new Singleton5());
 
         private Singleton5()
         {
@@ -29,10 +29,10 @@ namespace CSharpDotNet.DesignPattern.SingletonPattern
         {
 			get
             {
-                if (lazy.IsValueCreated)
-                    Console.WriteLine("lazy.IsValueCreated: " + lazy.IsValueCreated);
+                if (lazyInstance.IsValueCreated)
+                    Console.WriteLine("lazy.IsValueCreated: " + lazyInstance.IsValueCreated);
 
-                return lazy.Value;
+                return lazyInstance.Value;
             }
         }
     }
